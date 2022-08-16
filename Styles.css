@@ -16,7 +16,7 @@ body {
     display: flex;
     color: white;
     align-items: center;
-    border-bottom: 4px solid rgb(254, 195, 195);
+    border-bottom: 2px solid rgb(254, 195, 195);
     padding: 0 50px;
     justify-content: space-between;
 }
@@ -62,20 +62,22 @@ body {
 
 .hero-left { 
     width: 650px;
-    font-family: 'Lexend Zeta', sans-serif;
-    font-weight: 100;
-    padding: 50px;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-weight: 200;
 }
 
 .hero-left h1 {
     font-size: 70px;
-    font-weight: 800;
+    font-weight: 300;
     color:blanchedalmond;
 }
 
 .hero-left p {
-    font-size: 20px;
-    font-weight: 10;
+    font-size: 25px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 14;
+    width: 500px;
+    padding-top: 20px;
 }
 
 button {
@@ -85,10 +87,9 @@ button {
     border: none;
     border-radius: 30px;
     button-style: none;
-    letter-spacing: 2px;
     font-family: 'Sen', sans-serif;
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 100;
     color: white;
     margin-top: 40px;
 }
@@ -100,7 +101,7 @@ button {
 .services {
     background-color: lavender;
     height: 800px;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Lexend Zetta', sans-serif;
     font-weight: 300;
     font-size: 50px;
     display: inline-block;
@@ -117,24 +118,27 @@ button {
     display: flex;
     width: 80%;
     height: 300px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Sen', sans-serif;
     font-size: 20px;
     margin: auto;
     border: 2px solid #3882F6;
     border-radius: 300px;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
+    justify-content: space-around;
 }
 
-.rocket {
-    
-    height: 200px; 
-    width: auto;
-}
 
-.img-box1 {
+.img-boxes img{
     -webkit-clip-path: circle(30% at 50% 40%);
+}
+
+.img-box4 img{
+    -webkit-clip-path: circle(25% at 50% 40%);
+}
+
+.img-boxes img:hover {
+    -webkit-clip-path: circle(28% at 50% 40%);
+    transition: 0.5s;
 }
 
 /* ------------------- QUOTE --------------------- */
@@ -148,8 +152,6 @@ button {
     width: 100%;
     display: inline-block;
     text-align: right;
- 
-
 }
 
 .quote-container {
@@ -160,11 +162,11 @@ button {
     height: auto;
     font-weight: 100;
     padding-right: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
     border-radius: 1px solid black;
     position: absolute;
     right: 40px;
-    border-right: 6px solid rgb(25, 21, 152);
+    border-right: 6px solid #3882F6;
 }
 
 .quote-container h4 {
@@ -176,7 +178,7 @@ button {
 /* ----------------------- CTA ------------------------*/
 
 .cta-container {
-    height: 400px;
+    height: 600px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -185,17 +187,29 @@ button {
 
 .blue-container {
     display: flex;
-    width: 500px;
-    height: 200px;
+    width: 400px;
+    height: 133px;
     padding: 30px;
     background-color: #3882F6;
     text-align: center;
+    border-radius:20px 20px;
+}
+
+.cta-type h {
+    font-size: 30px;
 }
 
 .cta-type {
     color: white;
     font-family: 'Sen', sans-serif;
     font-size: 20px;
+}
+
+.button2 {
+    text-spacing: 2px;
+    background-color:#f09595;
+    border: 2px solid white;
+    font-family: 'Sen', sans-serif;
 }
 
 
@@ -208,11 +222,12 @@ button {
     width: 100%;
     color:aliceblue;
     font-size: 16px;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Raleway', sans-serif;
     justify-content: center;
     align-items: center;
  
 }
-.copyright {
-
+.copyright p {
+    padding: 5px;
+    border-bottom: 1px solid white;
 }
